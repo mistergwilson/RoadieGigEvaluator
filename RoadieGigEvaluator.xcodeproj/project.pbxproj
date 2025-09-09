@@ -14,6 +14,11 @@
 		8465C6F82E6F7AA80076F8F5 /* RoadieGigEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C6F72E6F7AA80076F8F5 /* RoadieGigEvaluatorTests.swift */; };
 		8465C7022E6F7AA80076F8F5 /* RoadieGigEvaluatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C7012E6F7AA80076F8F5 /* RoadieGigEvaluatorUITests.swift */; };
 		8465C7042E6F7AA80076F8F5 /* RoadieGigEvaluatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C7032E6F7AA80076F8F5 /* RoadieGigEvaluatorUITestsLaunchTests.swift */; };
+		8465C7112E6F7B300076F8F5 /* GigModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C7102E6F7B300076F8F5 /* GigModels.swift */; };
+		8465C7132E6F7EF10076F8F5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C7122E6F7EF10076F8F5 /* ImagePicker.swift */; };
+		8465C7152E6F808E0076F8F5 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C7142E6F808E0076F8F5 /* OCRService.swift */; };
+		8465C7172E6F80E10076F8F5 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C7162E6F80E10076F8F5 /* LocationService.swift */; };
+		8465C7192E6F81070076F8F5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465C7182E6F81070076F8F5 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		8465C6FD2E6F7AA80076F8F5 /* RoadieGigEvaluatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadieGigEvaluatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8465C7012E6F7AA80076F8F5 /* RoadieGigEvaluatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadieGigEvaluatorUITests.swift; sourceTree = "<group>"; };
 		8465C7032E6F7AA80076F8F5 /* RoadieGigEvaluatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadieGigEvaluatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8465C7102E6F7B300076F8F5 /* GigModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigModels.swift; sourceTree = "<group>"; };
+		8465C7122E6F7EF10076F8F5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8465C7142E6F808E0076F8F5 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		8465C7162E6F80E10076F8F5 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		8465C7182E6F81070076F8F5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +104,12 @@
 		8465C6E52E6F7AA60076F8F5 /* RoadieGigEvaluator */ = {
 			isa = PBXGroup;
 			children = (
+				8465C7122E6F7EF10076F8F5 /* ImagePicker.swift */,
+				8465C7102E6F7B300076F8F5 /* GigModels.swift */,
 				8465C6E62E6F7AA60076F8F5 /* RoadieGigEvaluatorApp.swift */,
+				8465C7142E6F808E0076F8F5 /* OCRService.swift */,
+				8465C7162E6F80E10076F8F5 /* LocationService.swift */,
+				8465C7182E6F81070076F8F5 /* SettingsView.swift */,
 				8465C6E82E6F7AA60076F8F5 /* ContentView.swift */,
 				8465C6EA2E6F7AA80076F8F5 /* Assets.xcassets */,
 				8465C6EC2E6F7AA80076F8F5 /* Preview Content */,
@@ -257,7 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8465C7192E6F81070076F8F5 /* SettingsView.swift in Sources */,
+				8465C7152E6F808E0076F8F5 /* OCRService.swift in Sources */,
+				8465C7112E6F7B300076F8F5 /* GigModels.swift in Sources */,
+				8465C7132E6F7EF10076F8F5 /* ImagePicker.swift in Sources */,
 				8465C6E92E6F7AA60076F8F5 /* ContentView.swift in Sources */,
+				8465C7172E6F80E10076F8F5 /* LocationService.swift in Sources */,
 				8465C6E72E6F7AA60076F8F5 /* RoadieGigEvaluatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +444,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RoadieGigEvaluator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to estimate distance to the pickup location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Needed to import Roadie screenshots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +474,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RoadieGigEvaluator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to estimate distance to the pickup location.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Needed to import Roadie screenshots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
